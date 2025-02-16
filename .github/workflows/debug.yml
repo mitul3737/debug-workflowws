@@ -5,8 +5,8 @@ on:
     push:
 
 env:
-    User_1: "foo-user"
-    User_2: "boo-user"
+    USER_1: "foo-user"
+    USER_2: "boo-user"
 
 jobs:
     debug_job:
@@ -20,7 +20,7 @@ jobs:
             - name: Step 3 - Printing username
               run: |
                 echo "Printing USERNAME env variable from previous step"  
-                echo "Username========== $USERNAME"
+                echo "Username ========== $USERNAME"
                 exit 1
             - name: Step 4- Printing USER_2
               run: |
