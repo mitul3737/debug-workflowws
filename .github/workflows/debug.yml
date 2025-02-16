@@ -18,10 +18,10 @@ jobs:
               run: | #creating new variable called USERNAME using the environment 
                 echo "USERNAME=$USER_1" >> $GITHUB_ENV
             - name: Step 3 - Printing username
-              run: |
+              run: | #using exit 1 to fail the workflow and leave
                 echo "Printing USERNAME env variable from previous step"  
                 echo "Username ========== $USERNAME"
-                exit 1
+                exit 1 
             - name: Step 4- Printing USER_2
               run: |
                 echo $USER_2
