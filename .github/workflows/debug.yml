@@ -1,4 +1,5 @@
 name: Debugging Demo
+#once the workflow fails due to exit 1, select Re-run failed jobs from github UI and enable the debug logging
 
 on:
     workflow_dispatch:
@@ -25,3 +26,5 @@ jobs:
             - name: Step 4- Printing USER_2
               run: |
                 echo $USER_2
+
+        
